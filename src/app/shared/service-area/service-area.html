@@ -1,0 +1,29 @@
+<!--? services area start -->
+<section class="services-section services-section2 pb-padding fix">
+  <div class="container">
+    <div class="custom-row">
+      <div class="services-active">
+        <owl-carousel-o [options]="customOptions">
+          @for (slide of slidesStore(); track slide.id) {
+            <ng-template carouselSlide [id]="slide.id">
+              <div class="single-cat">
+                <div class="cat-icon">
+                  <img [src]="slide.src" [alt]="slide.alt" />
+                </div>
+                <div class="cat-cap">
+                  <h5>
+                    <a href="services.html">{{ slide.text }}</a>
+                  </h5>
+                  <p>
+                    {{slide.para}}
+                  </p>
+                </div>
+              </div>
+            </ng-template>
+          }
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services End -->
