@@ -1,0 +1,23 @@
+.whats-app {
+  position: fixed;
+  bottom: 0px;
+  z-index: 100;
+  left: 10px;
+
+  img {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whats-app {
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    left: 0;
+
+    img {
+      width: 40%;
+    }
+  }
+}
